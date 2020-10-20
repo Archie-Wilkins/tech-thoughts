@@ -1,0 +1,79 @@
+/* RESET */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+
+header{
+  height: 100vh;
+  width: 100%;
+  background-image: url(headerImage.jpg);
+  /* Image from Fauxels on pexels (the license requires no attribution but they deserve it) */
+  /* The below is taken from W3Schools - https://www.w3schools.com/howto/howto_css_parallax.asp  */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+  color: white;
+}
+
+.headerContents{
+  max-width: 40%;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  transform: translate(-20%, -50%);
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* TEAM UPDATES
+ */
+
+
+/* POPULAR ARTICLES */
+
+.cardSection{
+  width: 100%;
+  height: 600px;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.cardSection h2{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 400px;
+  width: 30%;
+  min-width: 100px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.1s ease-in;
+  padding-top: 10px;
+  overflow-x: none;
+}
+
+.card:hover{
+  transform: scale(1.04);
+}
