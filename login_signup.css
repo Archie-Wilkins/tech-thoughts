@@ -3,4 +3,7 @@
     padding: 0;
   }
 
-  
+  .body{
+    font-weight: bold;
+    text-transform: capitalize;
+  }
